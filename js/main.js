@@ -156,5 +156,29 @@
     });
   });
 
+  
 
+  
+  // Text to type out
+  const text = "Enjoy Our Delicious Meal";
+  const heading = document.getElementById("typing-heading");
+  
+  let currentIndex = 0;
+
+  // Typing function
+  function typeText() {
+    // Add the next character to the heading
+    heading.innerHTML = text.substring(0, currentIndex + 1);
+
+    // Move to the next character
+    currentIndex++;
+
+    // If not finished, call typeText again
+    if (currentIndex < text.length) {
+      setTimeout(typeText, 150); // Adjust speed (150ms per character)
+    }
+  }
+
+  // Start typing animation
+  typeText();
 

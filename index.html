@@ -35,17 +35,22 @@
 <body class="bg-black">
     <div class="container-xxl  p-0">
         <!-- Spinner Start -->
+        <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            
+            <img src="img/food1.gif" alt="Loading..." class="spinner-image" />
+        </div>-->
+        
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div>
+        </div> 
         <!-- Spinner End -->
 
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+            <nav class="navbar  navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
                      <img src="img/wtf-logo-white.png" alt="Logo" height="auto" width=""> 
                 </a>
@@ -69,11 +74,17 @@
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container my-5 py-5">
                     <div class="row align-items-center g-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
-                            <p class="text-white animated slideInLeft mb-4 pb-2">Welcome to<span class="text-primary"> WHERE'S THE FOOD</span> where culinary artistry meets an unforgettable dining experience.</p>
-                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                      <div class="col-lg-6 text-center text-lg-start">
+                        <div class="my-6">
+                          <!-- Typing effect applied here -->
+                          <h2 class=" type text-white" id="typing-heading"></h2>
                         </div>
+                        <p class="text-white animated slideInLeft mb-4 pb-2">
+                          Welcome to <span class="text-primary">WHERE'S THE FOOD</span> where culinary artistry meets an unforgettable dining experience.
+                        </p>
+                        <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                      </div>
+                      
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                             <img class="img-fluid" src="img/hero.png" alt="">
                         </div>
@@ -394,7 +405,7 @@
                     <div class="col-lg-3 col-md-6">
                         <h4 class="">
                             <!-- Add Logo -->
-                            <img src="img/wtf-logo-colourful.png" alt="Logo" class="img-fluid" style="max-width: 150px;" />
+                            <img src="img/WTF-Orange-white.png" alt="Logo" class="img-fluid" style="max-width: 150px;" />
                         </h4>
                         <a class="btn btn-link" href="">About Us</a>
                         <a class="btn btn-link" href="">Contact Us</a>
