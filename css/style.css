@@ -6,6 +6,10 @@
     --black: #060708;
     
 }
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
 .ff-secondary {
     font-family: 'Pacifico', cursive;
@@ -95,6 +99,11 @@
 
 
 /*** Navbar ***/
+/* General Navbar Styles */
+.navbar-dark {
+    z-index: 999;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     position: relative;
     margin-left: 25px;
@@ -104,11 +113,7 @@
     text-transform: uppercase;
     font-weight: 500;
     outline: none;
-    transition: .5s;
-}
-
-.sticky-top.navbar-dark .navbar-nav .nav-link {
-    padding: 20px 0;
+    transition: 0.5s;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -118,60 +123,49 @@
 
 .navbar-dark .navbar-brand img {
     max-height: 60px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .sticky-top.navbar-dark .navbar-brand img {
     max-height: 45px;
 }
 
+/* Sticky Navbar */
 @media (max-width: 991.98px) {
-    .sticky-top.navbar-dark {
-        position: relative;
+    .navbar-dark {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background: var(--black) !important;
+        transition: background 0.3s;
     }
 
     .navbar-dark .navbar-collapse {
         margin-top: 15px;
-        border-top: 1px solid rgba(255, 255, 255, .1)
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .navbar-dark .navbar-nav .nav-link,
-    .sticky-top.navbar-dark .navbar-nav .nav-link {
+    .navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
     }
-
-    .navbar-dark .navbar-brand img {
-        max-height: 45px;
-    }
-    .navbar-dark {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        background: transparent !important;
-    }
-    
-    .sticky-top.navbar-dark {
-        position: fixed;
-        background: var(--dark) !important;
-    }
 }
 
+/* For Larger Screens */
 @media (min-width: 992px) {
     .navbar-dark {
         position: absolute;
         width: 100%;
         top: 0;
-        left: 0;
         z-index: 999;
         background: transparent !important;
+        transition: background 0.3s;
     }
-    
+
     .sticky-top.navbar-dark {
         position: fixed;
-        background: var(--dark) !important;
+        background: var(--black) !important;
     }
 }
 
@@ -502,7 +496,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
+    
     border: 1px solid #FFFFFF;
     border-radius: 35px;
     transition: .3s;
@@ -588,3 +582,61 @@ background-image: linear-gradient(to right bottom, #fdfdfd, #ffecfc, #ffd8e4, #f
   }
   
   
+  .container {
+    width: 100%;
+    max-width: 90%; /* Default maximum width */
+    margin: 0 auto; /* Center align */
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1180px;
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .container {
+      max-width: 90%; /* For very large screens like 2650px */
+    }
+  }
+ 
+      .menu {
+        background-image: url('/img/rosemary2.png'), url('/img/shape-6.png');
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 40em, 40em;
+        
+    }
+    /* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .menu {
+        background-size: 20em, 20em; /* Smaller size for tablets and small devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        background-size: 10em, 10em; /* Even smaller size for very small screens */
+    }
+}
+
+
+    
