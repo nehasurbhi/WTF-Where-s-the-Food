@@ -639,4 +639,125 @@ background-image: linear-gradient(to right bottom, #fdfdfd, #ffecfc, #ffd8e4, #f
 }
 
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .section {
+            position: relative;
+            width: 100%;
+            height: 30vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .section h1, .section p {
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        #first-section {
+            background-image: url('/img/menu1.jpg');
+        }
+        #first-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Glassmorphism effect */
+            backdrop-filter: blur(5px);
+            z-index: 1;
+        }
+
+        #first-section > div {
+            position: relative;
+            z-index: 2; /* Ensures content is above the overlay */
+        }
+
+        #second-section {
+           
+            height: 90vh;
+        }
+
+        #third-section {
+            background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+        }
+
+        #fourth-section {
+           
+            height: 50vh;
+        }
+        #fifth-section {
+           
+            height: 90vh;
+        }
+        #sixth-section {
+           
+            height: 90vh;
+        }
+        #seventh-section {
+           
+            height: 90vh;
+        }
+        #eighth-section {
+           
+            height: 90vh;
+        }
+        #ninth-section {
+           
+            height: 80vh;
+        }
+        #tenth-section {
+           
+            height: 90vh;
+        }
+        #eleventh-section {
+           
+            height: 90vh;
+        }
+        #twelth-section {
+           
+            height: 90vh;
+        }
+        #thirteenth-section {
+           
+            height: 90vh;
+        }
+        .button {
+            color: white;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+
+        .photo {
+            padding: 50px 10px;
+            text-align: center;
+        }
+
+        .photo h2 {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                height: auto;
+                padding: 20px;
+            }
+        }
     
