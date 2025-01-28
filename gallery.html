@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Restoran - Bootstrap Restaurant Template</title>
+    <title>WTF-Testimonial</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -15,11 +15,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
+    
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -42,6 +42,27 @@
         </div>
         <!-- Spinner End -->
 
+         <!-- Top Bar -->
+         <div class="top-bar">
+            <div class="container-xxl">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <div>
+                        <i class='bx bx-map'></i> Plot no. 55, Vishwakarma Cooperative, Chira Chas, Bokaro, Jharkhand
+                        <span class="mx-2">|</span>
+                        <i class='bx bx-time'></i> Daily: 8.00 am to 10.00 pm
+                    </div>
+                    <div>
+                        <i class='bx bx-phone'></i> <a href="tel:+91 8603431017">
+                          +91 8603431017</a>
+                        <span class="mx-2">|</span>
+                      
+                        <a href="https://www.instagram.com/wtf152025?igsh=YjgzdjY2eHZhNHdt" target="_blank"><i class="fab fa-instagram"></i></a> <span></span>
+                        <a href="https://api.whatsapp.com/send/?phone=918603431017&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    
+                    </div>
+                </div>
+            </div>
+          </div>
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
@@ -58,7 +79,7 @@
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
                         <a href="menu.html" class="nav-item nav-link">Menu</a>
-                        <a href="gallery.html" class="nav-item nav-link ">Gallery</a>
+                        <a href="gallery.html" class="nav-item nav-link active">Galley</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="booking.html" class="btn btn-primary py-2 px-4">Book A Table</a>
@@ -67,11 +88,11 @@
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Our Team</h1>
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Gallery</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Team</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Gallery</li>
                         </ol>
                     </nav>
                 </div>
@@ -80,130 +101,46 @@
         <!-- Navbar & Hero End -->
 
 
-        <!-- Team Start -->
-        <div class="container-xxl pt-5 pb-3">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
-                    <h1 class="mb-5">Our Master Chefs</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            </div>
-                            <h5 class="mb-0">Full Name</h5>
-                            <small>Designation</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container gallery-container text-center">
+                <h2 class="mb-4">Here is a wide collection of pictures</h2>
+            
+                <div class="masonry">
+                    <!-- Image 1 -->
+                    <img src="img/about-1.jpg" class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="img/about-1.jpg" alt="Wedding Photo 1">
+                    <!-- Image 2 -->
+                    <img src="img/about-2.jpg" class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="img/about-2.jpg" alt="Wedding Photo 2">
+                    <!-- Image 3 -->
+                    <img src="img/about-3.jpg" class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="img/about-3.jpg" alt="Wedding Photo 3">
+                    <!-- Image 4 -->
+                    <img src="img/WTF/WTF/babycorn chilli.png" class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="img/WTF/WTF/babycorn chilli.png" alt="Wedding Photo 4">
+                    <!-- Add More Images -->
+                      <!-- Image 1 -->
+                    <img src="img/WTF/WTF/cheese french fries.png" class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="img/WTF/WTF/cheese french fries.png" alt="Wedding Photo 1">
+                    <!-- Image 2 -->
+                    <img src="img/WTF/WTF/cheese french fries.png" class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="img/WTF/WTF/cheese french fries.png" alt="Wedding Photo 2">
+                    <!-- Image 3 -->
+                    <img src="img/WTF/WTF/chicken 65.png" class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="img/WTF/WTF/chicken 65.png" alt="Wedding Photo 3">
+                    <!-- Image 4 -->
+                    <img src="img/WTF/WTF/chicken salt & pepper.png" class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="img/WTF/WTF/babycorn chilli.png" alt="Wedding Photo 4">
+                    <!-- Add More Images -->
                 </div>
             </div>
         </div>
-        <!-- Team End -->
+
+        <!-- Lightbox Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <span class="close-btn" data-bs-dismiss="modal">&times;</span>
+            <div class="modal-body text-center">
+                <img id="modalImage" src="" alt="Large View">
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Testimonial End -->
         
 
         <!-- Footer Start -->
@@ -228,9 +165,9 @@
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                         <div class="d-flex pt-2">
                            
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                             <a class="btn btn-outline-light btn-social" href="https://api.whatsapp.com/send/?phone=918603431017&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/wtf152025?igsh=YjgzdjY2eHZhNHdt"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" target="_blank" href=""><i class="fab fa-facebook-f"></i></a>
+                             <a class="btn btn-outline-light btn-social" target="_blank" href="https://api.whatsapp.com/send/?phone=918603431017&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                            <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.instagram.com/wtf152025?igsh=YjgzdjY2eHZhNHdt"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -311,7 +248,16 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script>
+        document.querySelectorAll(".gallery-item").forEach(item => {
+    item.addEventListener("click", function () {
+        const imgSrc = this.getAttribute("data-bs-src");
+        document.getElementById("modalImage").src = imgSrc;
+    });
+});
+    </script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>

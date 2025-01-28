@@ -182,3 +182,5 @@
   // Start typing animation
   typeText();
 
+  
+
