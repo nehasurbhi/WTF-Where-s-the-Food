@@ -119,21 +119,25 @@
 })(jQuery);
 
 
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const scrollInner = document.querySelector(".scroll-inner");
     const prevBtn = document.querySelector(".prev-btn");
     const nextBtn = document.querySelector(".next-btn");
     let autoScroll;
 
-    // Auto-scroll functionality
     function startAutoScroll() {
-      autoScroll = setInterval(() => {
-        scrollInner.scrollLeft += 250; // Scroll right
-      }, 2000);
+        autoScroll = setInterval(() => {
+            if (scrollInner.scrollLeft + scrollInner.clientWidth >= scrollInner.scrollWidth) {
+                // Reset scroll position to create a loop effect
+                scrollInner.scrollLeft = 0;
+            } else {
+                scrollInner.scrollLeft += 250; // Scroll right
+            }
+        }, 2000);
     }
 
     function stopAutoScroll() {
-      clearInterval(autoScroll);
+        clearInterval(autoScroll);
     }
 
     // Start auto-scroll
@@ -145,16 +149,27 @@
 
     // Prev button functionality
     prevBtn.addEventListener("click", () => {
-      scrollInner.scrollLeft -= 250; // Scroll left
-      stopAutoScroll(); // Pause auto-scroll on manual action
+        if (scrollInner.scrollLeft <= 0) {
+            // Move to the last item if at the beginning
+            scrollInner.scrollLeft = scrollInner.scrollWidth;
+        } else {
+            scrollInner.scrollLeft -= 250;
+        }
+        stopAutoScroll(); // Pause auto-scroll on manual action
     });
 
     // Next button functionality
     nextBtn.addEventListener("click", () => {
-      scrollInner.scrollLeft += 250; // Scroll right
-      stopAutoScroll(); // Pause auto-scroll on manual action
+        if (scrollInner.scrollLeft + scrollInner.clientWidth >= scrollInner.scrollWidth) {
+            // Reset to the start when reaching the end
+            scrollInner.scrollLeft = 0;
+        } else {
+            scrollInner.scrollLeft += 250;
+        }
+        stopAutoScroll(); // Pause auto-scroll on manual action
     });
-  });
+});
+
 
   
 
