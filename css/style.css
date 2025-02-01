@@ -870,3 +870,123 @@ background-image: linear-gradient(to right bottom, #fdfdfd, #ffecfc, #ffd8e4, #f
             margin: auto;
         }
        
+
+        .about-section {
+            padding: 50px 0;
+        }
+
+        .image-grid {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-1 { position: absolute; top: 0; left: 10px; width: 45%; }
+        .image-2 { position: absolute; top: 0; right: 10px; width: 45%; }
+        .image-3 { position: absolute; bottom: 0; left: 0; width: 60%; }
+        .image-4 { position: absolute; bottom: 0; right: 0; width: 60%; }
+
+        .about-text {
+            padding-left: 20px;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                margin: 0 auto 30px;
+            }
+
+            .image-grid img {
+                width: 48%;
+            }
+
+            .about-text {
+                text-align: center;
+                padding-left: 0;
+            }
+        }
+
+        .services-section {
+            position: relative;
+            background-image: url('/img/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 80px 0;
+        }
+
+        /* Glassmorphism Overlay */
+        .glass-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.62); /* Semi-transparent Black */
+            backdrop-filter: blur(4px); /* Frosted Glass Effect */
+        }
+
+        /* Content Styling */
+        .services-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .service-item:hover {
+            background: var(--primary);;
+            transform: translateY(-5px);
+        }
+
+        .service-item h5 {
+            color: #fff;
+        }
+
+        .service-item p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .service-item i {
+            color: #f8b400;
+        }
+
+        .section-title {
+            color: #f8b400;
+            font-weight: bold;
+        }
+
+        .text-primary {
+            color: #f8b400 !important;
+        }
