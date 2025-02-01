@@ -170,9 +170,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-  
-
   
   // Text to type out
   const text = "Enjoy Our Delicious Meal";
@@ -198,4 +195,9 @@ document.addEventListener("DOMContentLoaded", function () {
   typeText();
 
   
+
+
+
+
+
 
