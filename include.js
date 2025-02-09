@@ -17,4 +17,13 @@ fetch('navbar.html')
       .catch(error => {
         console.error('Error fetching footer.html:', error);
       });
+
+      fetch('card.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("card").innerHTML = html;
+      })
+      .catch(error => {
+        console.error('Error fetching card.html:', error);
+      });
    
